@@ -1,11 +1,13 @@
 package com.greatbit.models;
 
 public class Book {
+    private String id;
     private String name;
     private String author;
     private int pages;
 
-    public Book(String name, String author, int pages) {
+    public Book(String id, String name, String author, int pages) {
+        this.id = id;
         this.name = name;
         this.author = author;
         this.pages = pages;
@@ -13,6 +15,14 @@ public class Book {
 
     public String getName() {
         return name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void setName(String name) {

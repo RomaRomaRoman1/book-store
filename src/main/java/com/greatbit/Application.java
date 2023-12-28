@@ -14,8 +14,6 @@ import java.util.Arrays;
 public class Application {
 
     public static void main(String[] args) {
-        BooksStorage.getBooks().add(new Book("Учение Дона Хуана", "Карлос Кастонеле", 1000));
-        BooksStorage.getBooks().add(new Book("Funny Animals", "Peter Parker", 199));
         SpringApplication.run(Application.class, args);
     }
 
